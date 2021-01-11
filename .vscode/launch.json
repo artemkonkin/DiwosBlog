@@ -4,6 +4,13 @@
    // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
    "version": "0.2.0",
    "configurations": [
+       {
+           "cwd": "${workspaceFolder}/diwosfront",
+           "command": "npm run serve",
+           "name": "Run npm start",
+           "request": "launch",
+           "type": "node-terminal"
+       },
         {
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
