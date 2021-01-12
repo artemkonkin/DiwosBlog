@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
+using diwos.Models;
+
 namespace diwos.Controllers
 {
     [ApiController]

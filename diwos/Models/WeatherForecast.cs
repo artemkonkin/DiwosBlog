@@ -1,6 +1,6 @@
 using System;
 
-namespace diwos
+namespace diwos.Models
 {
     public class WeatherForecast
     {
