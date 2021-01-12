@@ -7,12 +7,12 @@
        {
            "cwd": "${workspaceFolder}/diwosfront",
            "command": "npm run serve",
-           "name": "Run npm start",
+           "name": "Front",
            "request": "launch",
            "type": "node-terminal"
        },
         {
-            "name": ".NET Core Launch (web)",
+            "name": "Back",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
@@ -39,5 +39,11 @@
             "request": "attach",
             "processId": "${command:pickProcess}"
         }
-    ]
+    ],
+    "compounds": [
+        {
+          "name": "Server/Client",
+          "configurations": ["Front", "Back"]
+        }
+      ]
 }
